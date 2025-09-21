@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postpartum Hemorrhage Awareness</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link JS -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">PPH Awareness</h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h2>Preventing Postpartum Hemorrhage</h2>
+        <p>
+            Learn about the causes, prevention, and treatment of one of the leading causes of maternal mortality
+            worldwide.
+        </p>
+        <button onclick="scrollToInfo()">Learn More</button>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info" id="info">
+        <h3>What is Postpartum Hemorrhage?</h3>
+        <p>
+            Postpartum hemorrhage (PPH) is excessive bleeding following childbirth. It is a serious medical emergency
+            that requires immediate intervention to save the mother’s life.
+        </p>
+        <div class="slider">
+            <img src="images/pph1.jpg" class="slide active" alt="Healthcare support for mothers">
+            <img src="images/pph2.jpg" class="slide" alt="Medical team handling emergency">
+            <img src="images/pph3.jpg" class="slide" alt="Mother with newborn and healthcare worker">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Postpartum Hemorrhage</h2>
+        <p>
+            PPH occurs when a mother loses more than 500ml of blood after vaginal delivery or more than 1000ml after a
+            cesarean section.
+        </p>
+        <h3>Causes:</h3>
+        <ul>
+            <li>Uterine atony (failure of the uterus to contract)</li>
+            <li>Retained placenta</li>
+            <li>Genital tract trauma</li>
+            <li>Clotting disorders</li>
+        </ul>
+
+        <h3>Prevention:</h3>
+        <p>
+            Active management of the third stage of labor, proper monitoring, and access to skilled birth attendants can
+            reduce PPH risks significantly.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PPH Awareness | Educational Purpose Only</p>
+    </footer>
+</body>
+
+</html>
